@@ -24,7 +24,7 @@ body {
 
 .ombre:hover {
   background: radial-gradient(
-    150px circle at var(--mouse-x) var(--mouse-y),
+    100px circle at var(--mouse-x) var(--mouse-y),
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.932)
   );
