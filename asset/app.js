@@ -24,7 +24,7 @@ ombre.addEventListener("mouseup", (e) =>{
     document.querySelector(".hello").style.backgroundImage = `url(images/${compteur}.jpg)`;   
      
      if(compteur == 4){
-         compteur = 1;
+         compteur = 0;
      }
 
 
@@ -61,7 +61,7 @@ document.querySelector(".hello").addEventListener("touchend",function(){
      document.querySelector(".hello").style.backgroundImage = `url(images/${compteur}.jpg)`;   
      
      if(compteur == 4){
-         compteur = 1;
+         compteur = 0;
      }
 });
 
