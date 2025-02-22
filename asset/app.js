@@ -1,5 +1,5 @@
  let compteur = 0;
-
+const ombre = document.getElementById("ombre");
 document.getElementById('ombre').addEventListener("mousemove", (e) =>{
 
     //  compteur++;
@@ -10,6 +10,23 @@ document.getElementById('ombre').addEventListener("mousemove", (e) =>{
 
     document.documentElement.style.setProperty("--mouse-x",x);
     document.documentElement.style.setProperty("--mouse-y",y);
+
+
+
+});
+
+
+ombre.addEventListener("touchmove", (e) =>{
+
+    e.preventDefault();
+    let touch = e.touches[0];
+
+    const x = (touch.clientX / window.innerWidth) * 100 + "%";
+    const y = (touch.clientY / window.innerHeight) * 100 + "%";
+
+    document.documentElement.style.setProperty("--mouse-x",x);
+    document.documentElement.style.setProperty("--mouse-y",y);
+  
 
 
 
