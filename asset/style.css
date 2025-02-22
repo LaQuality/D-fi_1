@@ -22,7 +22,7 @@ body {
   background-color: rgba(0, 0, 0, 0.932);
 }
 
-.ombre:hover,.ombre:active {
+.ombre:hover{
   background: radial-gradient(
     100px circle at var(--mouse-x) var(--mouse-y),
     rgba(0, 0, 0, 0),
