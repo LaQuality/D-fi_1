@@ -1,6 +1,6 @@
  let compteur = 0;
 const ombre = document.getElementById("ombre");
-document.getElementById('ombre').addEventListener("mousemove", (e) =>{
+ombre.addEventListener("mousemove", (e) =>{
 
     //  compteur++;
     //  console.log(compteur);
