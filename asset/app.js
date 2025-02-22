@@ -1,5 +1,6 @@
- let compteur = 0;
-const ombre = document.getElementById("ombre");
+ let compteur = 1;
+ const ombre = document.getElementById("ombre");
+
 ombre.addEventListener("mousemove", (e) =>{
 
     //  compteur++;
@@ -16,6 +17,24 @@ ombre.addEventListener("mousemove", (e) =>{
 });
 
 
+ombre.addEventListener("mouseup", (e) =>{
+
+    compteur++;
+         
+    document.querySelector(".hello").style.backgroundImage = `url(images/${compteur}.jpg)`;   
+     
+     if(compteur == 4){
+         compteur = 0;
+     }
+
+
+
+});
+
+
+
+
+
 ombre.addEventListener("touchmove", (e) =>{
 
     e.preventDefault();
@@ -26,8 +45,25 @@ ombre.addEventListener("touchmove", (e) =>{
 
     document.documentElement.style.setProperty("--mouse-x",x);
     document.documentElement.style.setProperty("--mouse-y",y);
-  
+    
 
 
 
 });
+
+document.querySelector(".hello").addEventListener("touchend",function(){
+
+     
+    compteur++;
+    
+    
+     
+     document.querySelector(".hello").style.backgroundImage = `url(images/${compteur}.jpg)`;   
+     
+     if(compteur == 4){
+         compteur = 0;
+     }
+});
+
+
+
