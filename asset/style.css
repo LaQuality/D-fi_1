@@ -13,6 +13,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  transition: 1s ease-in-out;
 }
 
 .ombre {
